@@ -30,3 +30,9 @@ class GPSPoint:
         return gps_point
 
 
+if __name__ == "__main__":
+    gps_point = GPSPoint(1, 2.0, 3.0, 4.0)
+    print(gps_point)
+    print(gps_point.to_json())
+    print(gps_point.to_json().encode("utf-8"))
+    
